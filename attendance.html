@@ -1,0 +1,524 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance - Smart Student</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+
+                <div class="small-logo">
+                    SS
+                </div>
+
+                <div>
+                    <h2>Smart Student</h2>
+                    <p>Attendance System</p>
+                </div>
+
+            </div>
+
+
+            <nav class="sidebar-menu">
+
+                <a href="admin-dashboard.html" class="nav-link">
+                    Dashboard
+                </a>
+
+                <a href="students.html" class="nav-link">
+                    Students
+                </a>
+
+                <a href="teachers.html" class="nav-link">
+                    Teachers
+                </a>
+
+                <a href="subjects.html" class="nav-link">
+                    Subjects
+                </a>
+
+                <a href="attendance.html" class="nav-link active">
+                    Attendance
+                </a>
+
+            </nav>
+
+
+            <div class="logout-area">
+
+                <a href="index.html" class="nav-link">
+                    Logout
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+
+        <main class="main">
+
+            <!-- Page Header -->
+
+            <header class="page-header">
+
+                <div>
+
+                    <h1>Attendance</h1>
+
+                    <p>
+                        View and manage student attendance
+                    </p>
+
+                </div>
+
+
+                <div class="user-info">
+
+                    <div class="user-circle">
+                        A
+                    </div>
+
+                    <div>
+
+                        <strong>Administrator</strong>
+
+                        <small>Admin</small>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- Attendance Filters -->
+
+            <section class="content-box">
+
+                <div class="attendance-filters">
+
+                    <div class="filter-group">
+
+                        <label for="attendanceDate">
+                            Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="attendanceDate">
+
+                    </div>
+
+
+                    <div class="filter-group">
+
+                        <label for="attendanceSubject">
+                            Subject
+                        </label>
+
+                        <select id="attendanceSubject">
+
+                            <option value="">
+                                Select Subject
+                            </option>
+
+                            <option value="dbms">
+                                Database Management System
+                            </option>
+
+                            <option value="java">
+                                Java Programming
+                            </option>
+
+                            <option value="se">
+                                Software Engineering
+                            </option>
+
+                            <option value="os">
+                                Operating System
+                            </option>
+
+                            <option value="nm">
+                                Numerical Method
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="filter-group">
+
+                        <label for="attendancePeriod">
+                            Period
+                        </label>
+
+                        <select id="attendancePeriod">
+
+                            <option value="">
+                                Select Period
+                            </option>
+
+                            <option value="1">
+                                1st - 6:00 AM
+                            </option>
+
+                            <option value="2">
+                                2nd - 6:55 AM
+                            </option>
+
+                            <option value="3">
+                                3rd - 7:50 AM
+                            </option>
+
+                            <option value="4">
+                                4th - 9:19 AM
+                            </option>
+
+                            <option value="5">
+                                5th - 10:05 AM
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button class="primary-button" id="loadAttendanceButton">
+                        Load Attendance
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- Attendance List -->
+
+            <section class="content-box">
+
+                <div class="student-actions">
+
+                    <div>
+
+                        <h2>Attendance List</h2>
+
+                        <p class="muted-text">
+                            4th Semester - Section A
+                        </p>
+
+                    </div>
+
+
+                    <div class="attendance-summary">
+
+                        <span>
+                            Present: 3
+                        </span>
+
+                        <span>
+                            Absent: 1
+                        </span>
+
+                        <span>
+                            Late: 1
+                        </span>
+
+                        <span>
+                            Leave: 0
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table id="attendanceTable">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Roll No.</th>
+                                <th>Student Name</th>
+                                <th>Attendance</th>
+                                <th>Remarks</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>01</td>
+
+                                <td>
+                                    Aashika Pandey
+                                </td>
+
+                                <td>
+
+                                    <select class="attendance-status">
+
+                                        <option value="present" selected>
+                                            Present
+                                        </option>
+
+                                        <option value="absent">
+                                            Absent
+                                        </option>
+
+                                        <option value="late">
+                                            Late
+                                        </option>
+
+                                        <option value="leave">
+                                            Leave
+                                        </option>
+
+                                    </select>
+
+                                </td>
+
+                                <td>
+
+                                    <input
+                                        type="text"
+                                        class="remarks-input"
+                                        placeholder="Optional">
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>02</td>
+
+                                <td>
+                                    Riya Sharma
+                                </td>
+
+                                <td>
+
+                                    <select class="attendance-status">
+
+                                        <option value="present" selected>
+                                            Present
+                                        </option>
+
+                                        <option value="absent">
+                                            Absent
+                                        </option>
+
+                                        <option value="late">
+                                            Late
+                                        </option>
+
+                                        <option value="leave">
+                                            Leave
+                                        </option>
+
+                                    </select>
+
+                                </td>
+
+                                <td>
+
+                                    <input
+                                        type="text"
+                                        class="remarks-input"
+                                        placeholder="Optional">
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>03</td>
+
+                                <td>
+                                    Sita Thapa
+                                </td>
+
+                                <td>
+
+                                    <select class="attendance-status">
+
+                                        <option value="present">
+                                            Present
+                                        </option>
+
+                                        <option value="absent" selected>
+                                            Absent
+                                        </option>
+
+                                        <option value="late">
+                                            Late
+                                        </option>
+
+                                        <option value="leave">
+                                            Leave
+                                        </option>
+
+                                    </select>
+
+                                </td>
+
+                                <td>
+
+                                    <input
+                                        type="text"
+                                        class="remarks-input"
+                                        placeholder="Optional">
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>04</td>
+
+                                <td>
+                                    Anisha KC
+                                </td>
+
+                                <td>
+
+                                    <select class="attendance-status">
+
+                                        <option value="present">
+                                            Present
+                                        </option>
+
+                                        <option value="absent">
+                                            Absent
+                                        </option>
+
+                                        <option value="late" selected>
+                                            Late
+                                        </option>
+
+                                        <option value="leave">
+                                            Leave
+                                        </option>
+
+                                    </select>
+
+                                </td>
+
+                                <td>
+
+                                    <input
+                                        type="text"
+                                        class="remarks-input"
+                                        placeholder="Optional">
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>05</td>
+
+                                <td>
+                                    Pratiksha Rai
+                                </td>
+
+                                <td>
+
+                                    <select class="attendance-status">
+
+                                        <option value="present" selected>
+                                            Present
+                                        </option>
+
+                                        <option value="absent">
+                                            Absent
+                                        </option>
+
+                                        <option value="late">
+                                            Late
+                                        </option>
+
+                                        <option value="leave">
+                                            Leave
+                                        </option>
+
+                                    </select>
+
+                                </td>
+
+                                <td>
+
+                                    <input
+                                        type="text"
+                                        class="remarks-input"
+                                        placeholder="Optional">
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <div class="attendance-bottom">
+
+                    <p class="muted-text">
+                        Select attendance status for each student.
+                    </p>
+
+                    <button class="primary-button" id="saveAttendanceButton">
+                        Save Attendance
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+```

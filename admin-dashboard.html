@@ -1,0 +1,367 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - Smart Student</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+
+                <div class="small-logo">
+                    SS
+                </div>
+
+                <div>
+                    <h2>Smart Student</h2>
+                    <p>Attendance System</p>
+                </div>
+
+            </div>
+
+
+            <nav class="sidebar-menu">
+
+                <a href="admin-dashboard.html" class="nav-link active">
+                    Dashboard
+                </a>
+
+                <a href="students.html" class="nav-link">
+                    Students
+                </a>
+
+                <a href="teachers.html" class="nav-link">
+                    Teachers
+                </a>
+
+                <a href="subjects.html" class="nav-link">
+                    Subjects
+                </a>
+
+                <a href="attendance.html" class="nav-link">
+                    Attendance
+                </a>
+
+            </nav>
+
+
+            <div class="logout-area">
+
+                <a href="index.html" class="nav-link">
+                    Logout
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+
+        <main class="main">
+
+            <!-- Page Header -->
+
+            <header class="page-header">
+
+                <div>
+
+                    <h1>Dashboard</h1>
+
+                    <p>
+                        Welcome, Admin
+                    </p>
+
+                </div>
+
+
+                <div class="user-info">
+
+                    <div class="user-circle">
+                        A
+                    </div>
+
+                    <div>
+
+                        <strong>Administrator</strong>
+
+                        <small>
+                            Admin
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- Dashboard Cards -->
+
+            <section class="dashboard-cards">
+
+                <div class="dashboard-card">
+
+                    <p>Total Students</p>
+
+                    <h2>40</h2>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <p>Total Teachers</p>
+
+                    <h2>8</h2>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <p>Total Subjects</p>
+
+                    <h2>5</h2>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <p>Below 80%</p>
+
+                    <h2>6</h2>
+
+                </div>
+
+            </section>
+
+
+            <!-- Two Sections -->
+
+            <section class="two-column">
+
+                <!-- Attendance Summary -->
+
+                <div class="content-box">
+
+                    <div class="box-header">
+
+                        <h2>Attendance Summary</h2>
+
+                        <span>
+                            4th Semester
+                        </span>
+
+                    </div>
+
+
+                    <div class="attendance-number">
+                        86%
+                    </div>
+
+
+                    <p class="muted-text">
+                        Overall student attendance
+                    </p>
+
+                </div>
+
+
+                <!-- Quick Links -->
+
+                <div class="content-box">
+
+                    <div class="box-header">
+
+                        <h2>Quick Links</h2>
+
+                    </div>
+
+
+                    <div class="quick-links">
+
+                        <a href="students.html">
+                            Manage Students
+                        </a>
+
+                        <a href="teachers.html">
+                            Manage Teachers
+                        </a>
+
+                        <a href="subjects.html">
+                            Manage Subjects
+                        </a>
+
+                        <a href="attendance.html">
+                            View Attendance
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Recent Students -->
+
+            <section class="content-box">
+
+                <div class="box-header">
+
+                    <h2>Students Below 80%</h2>
+
+                    <a href="students.html">
+                        View Students
+                    </a>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Roll No.</th>
+                                <th>Name</th>
+                                <th>Semester</th>
+                                <th>Section</th>
+                                <th>Attendance</th>
+                                <th>Status</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>03</td>
+
+                                <td>
+                                    Sita Thapa
+                                </td>
+
+                                <td>
+                                    4th
+                                </td>
+
+                                <td>
+                                    A
+                                </td>
+
+                                <td>
+                                    75%
+                                </td>
+
+                                <td>
+
+                                    <span class="status nq">
+                                        NQ
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>07</td>
+
+                                <td>
+                                    Anisha KC
+                                </td>
+
+                                <td>
+                                    4th
+                                </td>
+
+                                <td>
+                                    A
+                                </td>
+
+                                <td>
+                                    78%
+                                </td>
+
+                                <td>
+
+                                    <span class="status nq">
+                                        NQ
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>12</td>
+
+                                <td>
+                                    Pratiksha Rai
+                                </td>
+
+                                <td>
+                                    4th
+                                </td>
+
+                                <td>
+                                    A
+                                </td>
+
+                                <td>
+                                    72%
+                                </td>
+
+                                <td>
+
+                                    <span class="status nq">
+                                        NQ
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
+```

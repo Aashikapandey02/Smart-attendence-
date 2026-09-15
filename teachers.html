@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teachers - Smart Student</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+
+                <div class="small-logo">
+                    SS
+                </div>
+
+                <div>
+                    <h2>Smart Student</h2>
+                    <p>Attendance System</p>
+                </div>
+
+            </div>
+
+
+            <nav class="sidebar-menu">
+
+                <a href="admin-dashboard.html" class="nav-link">
+                    Dashboard
+                </a>
+
+                <a href="students.html" class="nav-link">
+                    Students
+                </a>
+
+                <a href="teachers.html" class="nav-link active">
+                    Teachers
+                </a>
+
+                <a href="subjects.html" class="nav-link">
+                    Subjects
+                </a>
+
+                <a href="attendance.html" class="nav-link">
+                    Attendance
+                </a>
+
+            </nav>
+
+
+            <div class="logout-area">
+
+                <a href="index.html" class="nav-link">
+                    Logout
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+
+        <main class="main">
+
+            <!-- Page Header -->
+
+            <header class="page-header">
+
+                <div>
+
+                    <h1>Teachers</h1>
+
+                    <p>
+                        Manage teacher records
+                    </p>
+
+                </div>
+
+
+                <div class="user-info">
+
+                    <div class="user-circle">
+                        A
+                    </div>
+
+                    <div>
+
+                        <strong>Administrator</strong>
+
+                        <small>Admin</small>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- Teacher Content -->
+
+            <section class="content-box">
+
+                <div class="student-actions">
+
+                    <div>
+
+                        <h2>Teacher List</h2>
+
+                        <p class="muted-text">
+                            Teachers assigned to 4th semester
+                        </p>
+
+                    </div>
+
+
+                    <button class="primary-button" id="addTeacherButton">
+                        Add Teacher
+                    </button>
+
+                </div>
+
+
+                <!-- Search -->
+
+                <div class="student-tools">
+
+                    <input
+                        type="text"
+                        id="teacherSearch"
+                        placeholder="Search teacher name or subject">
+
+                </div>
+
+
+                <!-- Teacher Table -->
+
+                <div class="table-wrapper">
+
+                    <table id="teacherTable">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>ID</th>
+                                <th>Teacher Name</th>
+                                <th>Subject</th>
+                                <th>Phone</th>
+                                <th>Status</th>
+                                <th>Action</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>T01</td>
+
+                                <td>
+                                    Mr. Sharma
+                                </td>
+
+                                <td>
+                                    Database Management System
+                                </td>
+
+                                <td>
+                                    98XXXXXXXX
+                                </td>
+
+                                <td>
+
+                                    <span class="status eligible">
+                                        Active
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="table-button edit-button">
+                                        Edit
+                                    </button>
+
+                                    <button class="table-button delete-button">
+                                        Delete
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>T02</td>
+
+                                <td>
+                                    Ms. Karki
+                                </td>
+
+                                <td>
+                                    Java Programming
+                                </td>
+
+                                <td>
+                                    98XXXXXXXX
+                                </td>
+
+                                <td>
+
+                                    <span class="status eligible">
+                                        Active
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="table-button edit-button">
+                                        Edit
+                                    </button>
+
+                                    <button class="table-button delete-button">
+                                        Delete
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>T03</td>
+
+                                <td>
+                                    Mr. Neupane
+                                </td>
+
+                                <td>
+                                    Software Engineering
+                                </td>
+
+                                <td>
+                                    98XXXXXXXX
+                                </td>
+
+                                <td>
+
+                                    <span class="status eligible">
+                                        Active
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="table-button edit-button">
+                                        Edit
+                                    </button>
+
+                                    <button class="table-button delete-button">
+                                        Delete
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>T04</td>
+
+                                <td>
+                                    Ms. Thapa
+                                </td>
+
+                                <td>
+                                    Operating System
+                                </td>
+
+                                <td>
+                                    98XXXXXXXX
+                                </td>
+
+                                <td>
+
+                                    <span class="status eligible">
+                                        Active
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="table-button edit-button">
+                                        Edit
+                                    </button>
+
+                                    <button class="table-button delete-button">
+                                        Delete
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>T05</td>
+
+                                <td>
+                                    Mr. Rai
+                                </td>
+
+                                <td>
+                                    Numerical Method
+                                </td>
+
+                                <td>
+                                    98XXXXXXXX
+                                </td>
+
+                                <td>
+
+                                    <span class="status eligible">
+                                        Active
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button class="table-button edit-button">
+                                        Edit
+                                    </button>
+
+                                    <button class="table-button delete-button">
+                                        Delete
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+```

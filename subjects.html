@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Subjects - Smart Student</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+
+                <div class="small-logo">
+                    SS
+                </div>
+
+                <div>
+                    <h2>Smart Student</h2>
+                    <p>Attendance System</p>
+                </div>
+
+            </div>
+
+
+            <nav class="sidebar-menu">
+
+                <a href="admin-dashboard.html" class="nav-link">
+                    Dashboard
+                </a>
+
+                <a href="students.html" class="nav-link">
+                    Students
+                </a>
+
+                <a href="teachers.html" class="nav-link">
+                    Teachers
+                </a>
+
+                <a href="subjects.html" class="nav-link active">
+                    Subjects
+                </a>
+
+                <a href="attendance.html" class="nav-link">
+                    Attendance
+                </a>
+
+            </nav>
+
+
+            <div class="logout-area">
+
+                <a href="index.html" class="nav-link">
+                    Logout
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+
+        <main class="main">
+
+            <!-- Page Header -->
+
+            <header class="page-header">
+
+                <div>
+
+                    <h1>Subjects</h1>
+
+                    <p>
+                        Manage subjects and class periods
+                    </p>
+
+                </div>
+
+
+                <div class="user-info">
+
+                    <div class="user-circle">
+                        A
+                    </div>
+
+                    <div>
+
+                        <strong>Administrator</strong>
+
+                        <small>Admin</small>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- Subject Content -->
+
+            <section class="content-box">
+
+                <div class="student-actions">
+
+                    <div>
+
+                        <h2>Subject List</h2>
+
+                        <p class="muted-text">
+                            4th Semester - Section A
+                        </p>
+
+                    </div>
+
+
+                    <button class="primary-button" id="addSubjectButton">
+                        Add Subject
+                    </button>
+
+                </div>
+
+
+                <!-- Subject Table -->
+
+                <div class="table-wrapper">
+
+                    <table id="subjectTable">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Code</th>
+                                <th>Subject</th>
+                                <th>Teacher</th>
+                                <th>Period</th>
+                                <th>Time</th>
+                                <th>Action</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>SUB01</td>
+
+                                <td>
+                                    Database Management System
+                                </td>
+
+                                <td>
+                                    Mr. Sharma
+                                </td>
+
+                                <td>
+                                    1st
+                                </td>
+
+                                <td>
+                                    6:00 AM
+                                </td>
+
+                                <td>
+
+                                    <button class="table-button edit-button">
+                                        Edit
+                                    </button>
+
+                                    <button class="table-button delete-button">
+                                        Delete
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>SUB02</td>
+
+                                <td>
+                                    Java Programming
+                                </td>
+
+                                <td>
+                                    Ms. Karki
+                                </td>
+
+                                <td>
+                                    2nd
+                                </td>
+
+                                <td>
+                                    6:55 AM
+                                </td>
+
+                                <td>
+
+                                    <button class="table-button edit-button">
+                                        Edit
+                                    </button>
+
+                                    <button class="table-button delete-button">
+                                        Delete
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>SUB03</td>
+
+                                <td>
+                                    Software Engineering
+                                </td>
+
+                                <td>
+                                    Mr. Neupane
+                                </td>
+
+                                <td>
+                                    3rd
+                                </td>
+
+                                <td>
+                                    7:50 AM
+                                </td>
+
+                                <td>
+
+                                    <button class="table-button edit-button">
+                                        Edit
+                                    </button>
+
+                                    <button class="table-button delete-button">
+                                        Delete
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr class="break-row">
+
+                                <td>-</td>
+
+                                <td>
+                                    Break
+                                </td>
+
+                                <td>-</td>
+
+                                <td>-</td>
+
+                                <td>
+                                    8:45 AM
+                                </td>
+
+                                <td>-</td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>SUB04</td>
+
+                                <td>
+                                    Operating System
+                                </td>
+
+                                <td>
+                                    Ms. Thapa
+                                </td>
+
+                                <td>
+                                    4th
+                                </td>
+
+                                <td>
+                                    9:19 AM
+                                </td>
+
+                                <td>
+
+                                    <button class="table-button edit-button">
+                                        Edit
+                                    </button>
+
+                                    <button class="table-button delete-button">
+                                        Delete
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>SUB05</td>
+
+                                <td>
+                                    Numerical Method
+                                </td>
+
+                                <td>
+                                    Mr. Rai
+                                </td>
+
+                                <td>
+                                    5th
+                                </td>
+
+                                <td>
+                                    10:05 AM
+                                </td>
+
+                                <td>
+
+                                    <button class="table-button edit-button">
+                                        Edit
+                                    </button>
+
+                                    <button class="table-button delete-button">
+                                        Delete
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <p class="class-end-note">
+                    Classes end at 11:00 AM.
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+
